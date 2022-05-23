@@ -1,0 +1,48 @@
+
+
+	hackathon -2 URL details :
+
+
+	netlify url 		- https://628b65e1618f4730fa11ddaf--guvi-hackathon2-rajesh-m.netlify.app
+
+	github-url-front-end 	- https://github.com/RajeshManoharan92/guvi-hackathon-2-frontend
+
+	github-url-back-end 	- https://github.com/RajeshManoharan92/guvi-hackathon2-backend
+
+	heroku url 		- https://guvi-hackathon2-rajesh-m.herokuapp.com/
+
+
+
+	Local-Host-port : 3000
+
+	API - http://localhost:3000/product/get
+
+	End Points :
+
+	// to get product details
+
+	router.get('/get', nodemodule.getproductdetails);
+
+	//to get total product count
+
+	router.get('/gettotalproductcount', nodemodule.gettotalproductcount);
+
+	// to get contact us details
+
+	router.get('/getcontactusdetails', nodemodule.getcontactusdetails);
+	
+	// to post product datas
+	
+	router.post('/post',nodemodule.postproductdata);
+
+	// to post contactus datas
+
+	router.post('/contactus',nodemodule.postcontactusdata);
+
+	// to update product data
+
+	router.put('/update/:id',nodemodule.Updateproductdata);
+
+	// to delete product data
+	
+	router.delete('/delete/:id',nodemodule.deleteproductdata);
